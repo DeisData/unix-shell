@@ -5,7 +5,7 @@ This repository contains the scripts and datasets used in the **Automate with Sh
 Brandeis community members [register here](https://calendar.library.brandeis.edu/calendar/workshops/shell2020).
 
 ## Materials
-- Session 1 (Jun 09):  Introduction to Shell, Navigating to Files and Directories
+- Session 1 (Jun 09):  Introduction to Shell, Navigating to Files and Directories [[lesson](https://github.com/DeisData/unix-shell/blob/master/session-1.md)/[dataset](https://github.com/DeisData/unix-shell/blob/master/session-1.md)]
 - Session 2 (Jun 11):  Working with files and directories
 - Session 3 (Jun 16):  Pipes and Filters
 - Session 4 (Jun 18):  Loops
