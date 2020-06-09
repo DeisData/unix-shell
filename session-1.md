@@ -18,7 +18,7 @@
 ## What is Unix Shell?
 - _It is different from how we usually interact with our devices, on a **graphical user interface** (GUI)_
 - Shell is a **Command-Line Interface** (CLI) 
-  - Type commands
+  - Type commands in the **prompt** `$`
   - Invoke complicated programs
 - Shell is a scripting language
 - We will use the Unix Shell: Bash (Bourne Again SHell by Stephen Bourne)
@@ -30,10 +30,11 @@
 - Commands and the grammar of shell are used in other coding languages.
 
 ## Navigating files and directories
-- The part of the operating system responsible for managing files and directories is called the **file system**
-- **Files** hold information
-- **Directories** (or **folders**) hhold files or other directories.  Thinks of them like _places_.
-- **Current working directory** is the place where you are in the file system when you are using the shell.
+- **File System**: The part of the operating system responsible for managing files and directories
+  - **Files** hold information
+  - **Directories** (or **folders**) hhold files or other directories.  Thinks of them like _places_.
+  - **Current working directory** is the place where you are in the file system when you are using the shell.
+  - **Root directory** is the top directory that holds everything else.  It is refered to by a slash `/` on its own.  This is the leading slash in other directory paths, for example `/Users/claire/`
 
 ## Commands of the day:
 - `ls`: listing.  This command will list the contents of the current directory
