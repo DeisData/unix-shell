@@ -33,9 +33,10 @@
 - **File System**: The part of the operating system responsible for managing files and directories
   - **Files** hold information
   - **Directories** (or **folders**) hhold files or other directories.  Thinks of them like _places_.
-  - **Current working directory** is the place where you are in the file system when you are using the shell.
-  - **Root directory** is the top directory that holds everything else.  It is refered to by a slash `/` on its own.  This is the leading slash in other directory paths, for example `/Users/claire/`
-
+- **Current working directory** is the place where you are in the file system when you are using the shell.
+- **Root directory** is the top directory that holds everything else.  It is refered to by a slash `/` on its own.  This is the leading slash in other directory paths, for example `/Users/claire/`
+- **Hidden files and directories** start with `.` like `.bash_profile`.  They are usually configuration settings and are hidden to prevent cluttering the terminal with a standard `ls` command.  Add the `-a` option see hidden files. 
+-  
 ## Commands of the day:
 - `ls`: listing.  This command will list the contents of the current directory
   - `-F` option (switch or flag) tells ls to classify the output by adding a marker to file and directory names to indicate what they are.
@@ -47,8 +48,8 @@
 - up and down arrows can be used to access previous commands (or scroll)
 - `man` will give you the manual for a command, for example `man ls` will tell us all about listing
 - `cd` will change your working directory.  `cd` can only see sub-directories inside your current working directory.
-  - `cd ..` is a shortcut in shell to move up one directory
-  
+  - `cd ..` is a shortcut to move up one directory to the _parent directory_ of the one we are in
+  - `cd ~/` is a shortcut to move to the current user's home directory.  For example, if my home directory is `/Users/claire`, then `~/data` is equivalent to `Users/claire/data'
 
 ## General syntax of a shell command
 **Bash**
