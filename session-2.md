@@ -18,23 +18,52 @@ My next line of code should be (fill in the blanks):
 ```
 $ mv sucrose.dat matose.dat ___/___
 ```
+<details>
+  <summary>Solution</summary>
+  Think about ../raw
+  Recall that .. refers to the parent directory (i.e. one above the current directory).
+</details>
+
 2. Renaming Files. We mispelled a filename!  Which of the following commands will correct our mistake?
     - a. `cp statstics.txt statistics.txt`
     - b. `mv statstics.txt statistics.txt`
     - c. `mv statistics.txt . `
     - d. `cp statstics.txt .`
-  
+
+<details>
+  <summary>Solution</summary>
+  <p>(a.) Will copy the file, so we will end up with the mispelled and correct version.
+  (b.) Will move (i.e. rename) the incorrect file name to a correct filename.
+    (c.) and (d.) will not work. Remember . is the current directory.</p>
+</details>
+
 3. Removal. What happens when we execute `rm -i thesis/finaldraft.txt`? Why would we want this protection when using `rm`?
+<details>
+  <summary>Solution</summary>
+  The program will confirm that we want to delete the thesis final draft file.  Remember, deletion is forever!  There is no trash can or recycle bin.
+</details>
 
 4. Removal. What is wrong with the command `rm -i thesis`?
+<details>
+  <summary>Solution</summary>
+  The remove command will not act on a directory unless the recursive option (-r)is given. 
+</details>
 
 5. Removal. What is wrong with the command `rm -r thesis`?
+<details>
+  <summary>Solution</summary>
+  This remove command will delete the directory thesis and all its contents, but we forgot to check for confirmation with the interaction option (-i).  Remember, deletion is permanent!
+</details>
 
 6. Wildcards.  Which of the following matches the file names `ethane.dat` and `methane.dat`?
    - a. `ls ?ethane.dat`
    - b. `ls *ethane.dat`
    - c. `ls ???ane.dat`
    - d. `ls ethane.*`
+<details>
+  <summary>Hint</summary>
+  Remember ? wildcard matches to exactly one character.  * wildcard can match to zero to many characters.
+</details>
 
  
 
@@ -150,3 +179,26 @@ Now, it's your turn!
 
 [Add your code to the Jamboard!](https://jamboard.google.com/d/1d7hZeDHuvs4EnHiJFMrxhNPJDzQ_clPnqjzd_iBsAZ8/edit?usp=sharing)
 
+<details>
+  <summary>Get a hint</summary>
+  
+  #### Create a backup directory with subdirectories for data and calibration files
+  - Hint: You will use `mkdir`
+  ```
+  mkdir ___
+  mkdir ___/___
+  mkdir ___/___
+  ```
+  
+  #### Copy data files to `backup/data`. (Use a similiar approach for calibration files.)
+  - Hint:  Use the copy command `cp` with wildcards
+  ```
+  cp *-data.txt backup/___
+  ```
+  
+  #### Copy June 11th files to `send_to_claire/`. 
+  - Hint:  Use the copy command `cp` with wildcards!
+  ```
+  cp *-11-*.txt send_to_claire/
+  ```
+</details>
