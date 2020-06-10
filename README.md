@@ -12,4 +12,5 @@ Brandeis community members [register here](https://calendar.library.brandeis.edu
 - Session 5 (Jun 23):  Shell Scripts
 - Session 6 (Jun 25):  Finding things!
 
-## Getting Started:  [Open a Bash shell!](http://swcarpentry.github.io/shell-novice/setup.html)
+## Getting Started  
+- [Open a Bash shell!](https://github.com/DeisData/unix-shell/blob/master/getting-started.md)
