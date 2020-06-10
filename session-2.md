@@ -148,5 +148,5 @@ Now, it's your turn!
 1.  Create a backup directory with separate subdirectories for data and calibration files. Copy files to the appropriate locations.
 1.  Create a directory named send_to_claire and copy all the data from June 11th to it. 
 
-
+[Add your code to the Jamboard!](https://jamboard.google.com/d/1d7hZeDHuvs4EnHiJFMrxhNPJDzQ_clPnqjzd_iBsAZ8/edit?usp=sharing)
 
