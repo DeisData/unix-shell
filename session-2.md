@@ -65,11 +65,11 @@ The **wildcard** `?` matches exactly one character.
   - `touch new` creates an empty (0 byte) file by the new name given. Why bother? Some programs require empty files to populate with output.
 - Moving or Renaming directories or files safely:
   - `mv old new` command move has two arguments.  The first tells `mv` what we're moving, while the second is where it's to go.
-    - `mv -i` or `mv -interactive` must be used to make `mv` ask for confirmation before overwriting any existing file or directory with the same name as the second argument. (Otherwise, Beware! It will silently overwrite.)
+  - `mv -i` or `mv -interactive` must be used to make `mv` ask for confirmation before overwriting any existing file or directory with the same name as the second argument. (Otherwise, Beware! It will silently overwrite.)
 - Copying directories and/or files:  
   - `cp old new` command copies a file (first argument) to a new location (second argument)
-    - `cp -r` adds the recursive option to copy a directory and all its contents to another directory (second argument).  For example, we can make a backup with `cp -r thesis thesis_backup`.
-    - `cp` can be used on multiple filenames as long as a destination directory is the last argument. For example, `cp a.txt b.txt c.txt backup/` will copy the three text files into the subdirectory `backup/`.
+  - `cp -r` adds the recursive option to copy a directory and all its contents to another directory (second argument).  For example, we can make a backup with `cp -r thesis thesis_backup`.
+  - `cp` can be used on multiple filenames as long as a destination directory is the last argument. For example, `cp a.txt b.txt c.txt backup/` will copy the three text files into the subdirectory `backup/`.
 - Removing files and directories safely: **Deleting is forever**
   - `rm -i path` command for remove with interactive option to ask for confirmation before deleting.
   - `rm -i -r path` command with interactive option and recursive option will **remove a directory and all its contents** with confirmation prompts.    
@@ -118,6 +118,13 @@ nano 2020-06-09-data.txt
 
 # Let's edit and add information to another.
 nano 2020-06-09-callibration.txt
+```
+The next piece is provided in the shell script `session2challenge.sh`.
+Copy it to your fake_data directory.
+Run `bash session2challenge.sh`.
+
+```
+# session2challenge.sh creates more fake data and callibration files
 
 # (Spoiler alert!) We're going to use a while loop to make many fake data files.
 fmonth="2020-06"
