@@ -4,6 +4,8 @@ This repository contains the scripts and datasets used in the **Automate with Sh
 
 Brandeis community members [register here](https://calendar.library.brandeis.edu/calendar/workshops/shell2020).
 
+Access the [Zoom Classroom link and Session Recordings here](https://docs.google.com/document/d/1-kjo4I40Ovu0-DXxMi9sfps7VhQmY-JF_lPx9cc9cM4/edit?usp=sharing).  This workshop meets on Tuesdays and Thursdays at 3pm ET through June 25th.
+
 ## Materials
 - Session 1 (Jun 09):  Introduction to Shell, Navigating to Files and Directories [[lesson](https://github.com/DeisData/unix-shell/blob/master/session-1.md) / [dataset](https://github.com/DeisData/unix-shell/blob/master/data-shell.zip) / [setup instructions](http://swcarpentry.github.io/shell-novice/setup.html)]
 - Session 2 (Jun 11):  Working with files and directories
