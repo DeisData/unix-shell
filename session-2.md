@@ -121,12 +121,10 @@ nano 2020-06-09-callibration.txt
 ```
 The next piece is provided in the shell script `session2challenge.sh`.
 Copy it to your fake_data directory.
-Run `bash session2challenge.sh`.
 
 ```
 # session2challenge.sh creates more fake data and callibration files
 
-# (Spoiler alert!) We're going to use a while loop to make many fake data files.
 fmonth="2020-06"
 echo $fmonth
 
