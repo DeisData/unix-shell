@@ -8,7 +8,7 @@ Access the [Zoom Classroom link and Session Recordings here](https://docs.google
 
 ## Materials
 - Session 1 (Jun 09):  Introduction to Shell, Navigating to Files and Directories [[lesson](https://github.com/DeisData/unix-shell/blob/master/session-1.md) / [dataset](https://github.com/DeisData/unix-shell/blob/master/data-shell.zip) / [setup instructions](http://swcarpentry.github.io/shell-novice/setup.html)]
-- Session 2 (Jun 11):  Working with files and directories
+- Session 2 (Jun 11):  Working with files and directories [[lesson](https://github.com/DeisData/unix-shell/blob/master/session-2.md)]
 - Session 3 (Jun 16):  Pipes and Filters
 - Session 4 (Jun 18):  Loops
 - Session 5 (Jun 23):  Shell Scripts
