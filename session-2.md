@@ -107,7 +107,7 @@ mkdir fake_data
 
 # Create some empty files.
 touch 2020-06-09-data.txt
-touch 2020-06-09-callibration.txt
+touch 2020-06-09-calibration.txt
 
 # Make sure the new files are created. Notice we can combine options)
 ls -Fs
@@ -117,7 +117,7 @@ echo Hello World > 2020-06-09-data.txt
 nano 2020-06-09-data.txt
 
 # Let's edit and add information to another.
-nano 2020-06-09-callibration.txt
+nano 2020-06-09-calibration.txt
 ```
 The next piece is provided in the shell script `session2challenge.sh`.
 Copy it to your fake_data directory.
@@ -128,7 +128,7 @@ Copy it to your fake_data directory.
 fmonth="2020-06"
 echo $fmonth
 
-# Loop through days to create data files and callibration files
+# Loop through days to create data files and calibration files
 for i in `seq -w 10 30`
 do
   # Define the filename
@@ -138,14 +138,14 @@ do
   # Redirect in some data
   echo data $i > "$fname"
   
-  printf -v fname '%s-%02d-callibration.txt' "$fmonth" "$i"
+  printf -v fname '%s-%02d-calibration.txt' "$fmonth" "$i"
   touch "$fname"
   echo $i > "$fname"
 done
 ```
 
 Now, it's your turn!
-1.  Create a backup directory with separate subdirectories for data and callibration files. Copy files to the appropriate locations.
+1.  Create a backup directory with separate subdirectories for data and calibration files. Copy files to the appropriate locations.
 1.  Create a directory named send_to_claire and copy all the data from June 11th to it. 
 
 
