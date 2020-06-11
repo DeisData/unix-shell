@@ -133,6 +133,7 @@ cd ~/Desktop
 
 # Make a new folder for our fake data
 mkdir fake_data
+cd fake_data
 
 # Create some empty files.
 touch 2020-06-09-data.txt
