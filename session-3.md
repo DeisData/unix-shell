@@ -11,7 +11,9 @@ Instead of creating enormous programs that try to do many  different things, we 
  
 2. See the file called `data-shell/data/animals.txt.` 
 What text passes through each of the pipes and the final redirect in the pipeline below?
+
 `$ cat animals.txt | head -n 5 | tail -n 3 | sort -r > final.txt`
+
 Hint:  Build the pipeline up one command at a time to test your understanding.
  
 3.  `uniq` filters out adjecent matching lines in a file.  
