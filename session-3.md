@@ -1,7 +1,6 @@
 # Session 3: Pipes and Filters
 The idea of linking together programs is why Unix has been so successful.
 Instead of creating enormous programs that try to do many  different things, we focus on lots of simple tools that work well with each other.
-A **filter** is a program like wc
 
 ### Challenge Questions:
 1. In our current directory, we want to find the three files which have the least number of lines.  Which command listed below would work?
