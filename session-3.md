@@ -34,6 +34,14 @@ cut -d , -f 2 animals.txt | sort | uniq > animals_unique.txt
 - How can I write to a file from the shell prompt?
    
 ### Commands We Already Know
+- Navigating File System
+  - `ls`: listing contents of working directory with many options: `-F` classify, `-a` list all, `-s` size, `-S` sort by size
+  - `pwd` print working directory
+  - `clear` the terminal
+  - `man` will give you the manual for a command
+  - `cd` will change working directory
+  - `cd ..` change up to parent directory
+  - `cd ~` change to home directory
 - Creating Directories or Files:
   - `mkdir path` creates a new directory
   - `nano new` runs a text editor 
