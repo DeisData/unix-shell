@@ -56,7 +56,7 @@ cut -d , -f 2 animals.txt | sort | uniq > animals_unique.txt
   - `rm -i path` delete file with confirmation
   - `rm -i -r path` delete directory and contents    
 - Wildcards
-  - `$` matches to one character
+  - `?` matches to one character
   - `*` matches to zero to many characters
   
   
