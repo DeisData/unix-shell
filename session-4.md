@@ -1,6 +1,7 @@
 # Session 4: Loops
 Linking together programs is why Unix has been so successful.
-Now, we improve productivity through automation -- with loops and all those commands we have practiced come in use!
+Now, we improve productivity through automation -- with loops!
+All those commands we have learned will be put to use.
 
 ### Challenge Questions:
 Details to come!
