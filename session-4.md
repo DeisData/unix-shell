@@ -3,8 +3,18 @@ Linking together programs is why Unix has been so successful.
 Now, we improve productivity through automation -- with loops!
 All those commands we have learned will be put to use.
 
-### Challenge Questions:
-Details to come!
+### Nested Loops Challenge!
+What does this do?
+
+```
+$ for species in cubane ethane methane
+> do
+>     for temperature in 25 30 37 40
+>     do
+>         mkdir $species-$temperature
+>     done
+> done
+```
 
 ## Questions of the day:
 - How can I perform the same actions on many different files?
@@ -17,6 +27,29 @@ do
    operation_using $thing
 done
 ```
+
+## Loop Examples
+
+### Output part of files in a directory
+```
+cd Desktop/data-shell/creatures
+for filename in basilisk.dat minotaur.dat unicorn.dat
+do 
+   head -n 2 $filename
+done
+```
+
+### Output part of files in a directory
+```
+cd Desktop/data-shell/creatures
+for filename in basilisk.dat minotaur.dat unicorn.dat
+do 
+   head -n 2 $filename
+done
+```
+
+
+
 
 ### Commands We Already Know
 - Navigating File System
