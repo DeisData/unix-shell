@@ -70,7 +70,7 @@ done
 ```
 
 ### Checking on your loop before you run it!
-It can be a good idea to run your loop with `echo` in front of you commands, to make sure it will act the way you believe.  For example, in the loop above I may want to first run `echo "bash goostats $datafile stats$datafile"` before I run the loop to execute the `goostats` program.  
+It can be a good idea to run your loop with `echo` in front of you commands, to make sure it will act the way you believe.  For example, in the loop above I may want to first run `echo "bash goostats $datafile stats-$datafile"` before I run the loop to execute the `goostats` program.  
 
 ## Commands We Already Know
 - Navigating File System
