@@ -30,12 +30,11 @@ done
 
 ## Loop Examples
 
-### Output part of files in a directory
+### List the contents of working directory one item at a time
 ```
-cd Desktop/data-shell/creatures
-for filename in basilisk.dat minotaur.dat unicorn.dat
-do 
-   head -n 2 $filename
+for itemname in *
+do
+   ls $itemname
 done
 ```
 
@@ -48,10 +47,32 @@ do
 done
 ```
 
+### Write files in a directory to a new file
+```
+cd Desktop/data-shell/creatures
+for filename in basilisk.dat minotaur.dat unicorn.dat
+do 
+   cat -n 2 $filename >> all.pdb
+done
+```
 
+### Repeat running a program with all your input data files
+Nell has files NENE00000A.txt and NENE00000B.txt that need needs to run through th program
+`goostats` one at a time.  The program `goostats` has two arguments, the input data file, and the output statistics file.
 
+```
+cd ../north-pacific-gyre/2012-07-03
+for datafile in NENE*[AB].txt
+do
+    echo $datafile
+    bash goostats $datafile stats-$datafile   #where stats-$datafile is the output of goostats program.
+done
+```
 
-### Commands We Already Know
+### Checking on your loop before you run it!
+It can be a good idea to run your loop with `echo` in front of you commands, to make sure it will act the way you believe.  For example, in the loop above I may want to first run `echo "bash goostats $datafile stats$datafile"` before I run the loop to execute the `goostats` program.  
+
+## Commands We Already Know
 - Navigating File System
   - `ls`: listing contents of working directory with many options: `-F` classify, `-a` list all, `-s` size, `-S` sort by size
   - `pwd` print working directory
