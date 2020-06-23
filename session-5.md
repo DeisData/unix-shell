@@ -2,14 +2,58 @@
 We finally see what makes the shell a powerful programming environment.  
 We will take commands we repeat and save them in a **shell script**- a small program, so we can re-run operations with a single command.
 
-### Scripting Challenge!
-
 ## Questions of the day:
 - How can I save and re-use commands?
 
+### Shabang the top line of a script:
+```
+#!/bin/bash
+```
+Uses the special marker `#!` and path `/bin/bash` the instruct the shell to pass the script to the bash program for execution.  
+Other scripts may point to other shells (e.g. `#!/usr/bin/perl` will tell the shell to run a perl script.) 
 
-### Checking on your loop before you run it!
-It can be a good idea to run your loop with `echo` in front of you commands, to make sure it will act the way you believe.  For example, in the loop above I may want to first run `echo "bash goostats $datafile stats-$datafile"` before I run the loop to execute the `goostats` program.  
+### Use an argument on the command line executing a script
+For example, `$1` means the first argument on the command line in the script `header.sh`.
+
+**header.sh:**
+```
+#!/bin/bash
+# This script prints the first 15 lines of the file named in the command line (datafile.txt)
+head -n 15 $1 
+```
+**Command line:**
+```
+$  bash header.sh datafile.txt
+```
+
+### Use multiple arguments on the command line executing a script
+- Use double quotes around a variable in case a filename happens to contain spaces.
+- Use special variables `$1`, `$2`, and `$3`, etc.
+**header.sh:**
+```
+#!/bin/bash
+# This script prints the top $2 lines of the file $1, then writes the top lines to file $3
+head -n "$2" "$1" > "$3" 
+```
+**Command line:**
+```
+$  bash header.sh datafile.txt 10 topdata.txt
+```
+
+### Use special syntax to handle one or more filenames
+- Use `$@` to indicate all of the command-line arguments to the shell script.  Add quotations in case of filename spaces `"$@"`
+**sorted.sh:**
+```
+#!/bin/bash
+# Sort files by their length
+# USAGE: bash sorted.sh one_or_more_filenames
+wc -l "$@" | sort -n
+```
+**Command line:**
+```
+$  bash sorted.sh  *.pdb  ../creatures/*.dat
+```
+
 
 ## Commands and Concepts We Already Know
 - Navigating File System
