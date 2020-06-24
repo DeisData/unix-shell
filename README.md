@@ -10,8 +10,8 @@ Access the [Zoom Classroom link and Session Recordings here](https://docs.google
 - Session 1 (Jun 09):  Introduction to Shell, Navigating to Files and Directories [[lesson](https://github.com/DeisData/unix-shell/blob/master/session-1.md) / [dataset](https://github.com/DeisData/unix-shell/blob/master/data-shell.zip) / [setup instructions](https://github.com/DeisData/unix-shell/blob/master/getting-started.md)]
 - Session 2 (Jun 11):  Working with files and directories [[lesson](https://github.com/DeisData/unix-shell/blob/master/session-2.md)]
 - Session 3 (Jun 16):  Pipes and Filters [[lesson](https://github.com/DeisData/unix-shell/blob/master/session-3.md)]
-- Session 4 (Jun 18):  Loops [[lesson (draft)](https://github.com/DeisData/unix-shell/blob/master/session-4.md)]
-- Session 5 (Jun 23):  Shell Scripts
+- Session 4 (Jun 18):  Loops [[lesson](https://github.com/DeisData/unix-shell/blob/master/session-4.md)]
+- Session 5 (Jun 23):  Shell Scripts [[lesson](https://github.com/DeisData/unix-shell/blob/master/session-5.md)]
 - Session 6 (Jun 25):  Finding things!
 
 ## Getting Started  
